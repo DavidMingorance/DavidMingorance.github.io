@@ -6,7 +6,8 @@ Me gusta el furbo y la play
 Aqui almacenaremos la pagina web estática de la asignatura.
 ·
 
-Dos **asteriscos** significa BOLD.
-Un *asterisco* significa ITALIC.
-Un _guion bajo_ significa también ITALIC.
-Para ***Bold Italic*** tres asteriscos.
+- Dos **asteriscos** significa BOLD.
+- Un *asterisco* significa ITALIC.
+- Un _guion bajo_ significa también ITALIC.
+- Para ***Bold Italic*** tres asteriscos.
+- Guión seguido de espacio para hacer un item de list.
