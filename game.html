@@ -24,13 +24,32 @@ function game (data)
 	document.getElementById("terminal").innerHTML += "<p>Te encuentras en "+game_data.rooms[current_room].name+". ¿Qué quieres hacer?</p>";
 }
 
+function parseCommand (command){
+
+}
+
+function parseInstruction(instruction) {
+
+}
+
 
 function readAction ()
 {
-	let command = document.getElementById("commands").value;
+	let instruction = document.getElementById("commands").value;
 
-	let data = command.split(" ");
+	let data = instruction.split(" ");
 	console.log(data);
+
+	if (data.length == 0){
+		document.getElementById("terminal").innerHTML += "<p><strong>Error</strong>: Escribe una instruccion</p>";
+		return;
+	}
+	if (data.length == 1){
+		parseCommand(data[0]);
+	}
+	else {
+		parseInstruction(data);
+	}
 }
 
 fetch("https://DavidMingorance.github.io/game.json").then(response => response.json()).then(data => game(data));
